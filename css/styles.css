@@ -6,3 +6,39 @@
 :root {
     --header-height: 3rem;
 }
+
+.subscribe {
+    background-color: rgb(199, 0, 0);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.join {
+    background-color: white;
+    border-color: rgb(19, 19, 201);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 36px;
+    width: 62px;
+    color: rgb(19, 19, 201);
+}
+
+.tweet {
+    background-color: rgb(29, 155, 240);
+    border: none;
+    color: white;
+    height: 36px;
+    font-weight: bold;
+    border-radius: 18px;
+    width: 65px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 8px;
+}
