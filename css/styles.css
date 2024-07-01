@@ -3,42 +3,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* VARIABLES CSS */
-:root {
-    --header-height: 3rem;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
 }
 
-.subscribe {
-    background-color: rgb(199, 0, 0);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 105px;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
+h1 {
+    text-align: center;
 }
 
-.join {
-    background-color: white;
-    border-color: rgb(19, 19, 201);
-    border-style: solid;
-    border-width: 1px;
-    cursor: pointer;
-    border-radius: 2px;
-    height: 36px;
-    width: 62px;
-    color: rgb(19, 19, 201);
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
 }
 
-.tweet {
-    background-color: rgb(29, 155, 240);
-    border: none;
-    color: white;
-    height: 36px;
-    font-weight: bold;
-    border-radius: 18px;
-    width: 65px;
-    cursor: pointer;
-    font-size: 15px;
-    margin-left: 8px;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor:pointer;
+    margin-right: auto;
+    text-align: left;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: lightgray;
 }
