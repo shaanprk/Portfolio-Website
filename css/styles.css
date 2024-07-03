@@ -16,24 +16,32 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    /* outline: 2px solid lime; */
+}
+
+.pagewrap > * {
+    outline: 2px solid lime;
+}
+
+.mainnav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.mainnav > * {
+    /* red outline */
+    border: 5px dotted red;
 }
 
 .logo {
     border-radius:50%;
     max-width: 120px;
-    margin-right: 20px;
 }
 
 .menu {
     margin-left:20px;
     font-family: "Roboto", sans-serif;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    padding: 0px 0px;
 }
 
 h1 { 
