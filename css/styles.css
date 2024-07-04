@@ -20,7 +20,7 @@ body {
 }
 
 .pagewrap > * {
-    /* green outline */
+    /* green outline to highlight elements on page */
     outline: 2px solid lime;
 }
 
@@ -31,19 +31,58 @@ body {
 }
 
 .mainnav > * {
-    /* red outline */
+    /* red outline to highlight elements in header */
     border: 5px dotted red;
 }
 
 .logo {
     border-radius:50%;
-    max-width: 120px;
+    max-width: 100px;
 }
 
-.menu {
-    margin-left:20px;
-    font-family: "Roboto", sans-serif;
+/* button approach */
+.menu-button {
+    cursor: pointer;
+    border: none;
+    background: none;
 }
+
+/* .menu-link-mask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} */
+
+/* .menu-button-close, .menu-button-open {
+    position: absolute;
+    transition: opacity 0.3s;
+} */
+
+/* .menu-button-close {
+    opacity: 0;
+} */
+
+/* .menu-button.menu-open .menu-button-close {
+    opacity: 1;
+}
+
+.menu-button.menu-open .menu-button-open {
+    opacity: 0;
+}
+
+.menu-button:not(.menu-open) .menu-button-open {
+    opacity: 1;
+}
+
+.menu-button:not(.menu-open) .menu-button-close {
+    opacity: 0;
+} */
+
+
+
+
+
 
 h1 { 
     text-align: center;
