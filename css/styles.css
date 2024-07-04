@@ -20,6 +20,7 @@ body {
 }
 
 .pagewrap > * {
+    /* green outline */
     outline: 2px solid lime;
 }
 
