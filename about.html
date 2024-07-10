@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="pagewrap">
-            <div class="mainnav">
+            <header>
                 <div class="logo-wrap">
                     <a href="/">
                         <img class="logo" src="img/Cropped_Image.png" alt="logo">
@@ -26,41 +26,68 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
+            </header>
+
+            <div class="about-me">
+                <h1>About Me</h1>
+                <img src="img/image-jFAr-R161-transformed.png" width="150px">
+                <a href="https://github.com/shaanprk"><img class="logo" src="img/github-mark.png" alt="GitHub Logo" width="100px"></a>
+                <a href="https://www.linkedin.com/in/jeongbin-sean-park/"><img class="logo" src="img/circle-linkedin-512.webp" alt="GitHub Logo" width="100px"></a>
+                
+                <h3>Who am I?</h3>
+                <p>I'm an aspiring Software Engineer.</p>
+            </div>
+            <div class="resume">
+                <h3>Resume</h3>
+                <button id="resume-button">Click Here To See Resume</button>
+                <div id="pdf-container">
+                    <object
+                        type="application/pdf"
+                        data="pdf/Resume.pdf"
+                        width="600"
+                        height="700"
+                    ></object>
+                </div>
+            </div>
+            <div class="spotify-data">
+                <h3>What Am I Listening To?</h3>
+                <p>Insert Spotify API Data Here</p>
+                <p>Updated Every 30 Days</p>
             </div>
         </div>
 
-         <main>
-            <h1>About Me</h1>
-            <img src="img/image-jFAr-R161-transformed.png" width="150px">
-            <a href="https://github.com/shaanprk"><img class="logo" src="img/github-mark.png" alt="GitHub Logo" width="100px"></a>
-            <a href="https://www.linkedin.com/in/jeongbin-sean-park/"><img class="logo" src="img/circle-linkedin-512.webp" alt="GitHub Logo" width="100px"></a>
+        <main>
+           <!-- <h1>About Me</h1>
+           <img src="img/image-jFAr-R161-transformed.png" width="150px">
+           <a href="https://github.com/shaanprk"><img class="logo" src="img/github-mark.png" alt="GitHub Logo" width="100px"></a>
+           <a href="https://www.linkedin.com/in/jeongbin-sean-park/"><img class="logo" src="img/circle-linkedin-512.webp" alt="GitHub Logo" width="100px"></a>
 
-            <h3>Who am I?</h3>
-            <p>I'm an aspiring Software Engineer.</p>
+           <h3>Who am I?</h3>
+           <p>I'm an aspiring Software Engineer.</p> -->
 
-            <h3>Resume</h3>
-            <button id="resume-button">Click Here To See Resume</button>
-            <div id="pdf-container">
-                <object
-                    type="application/pdf"
-                    data="pdf/Resume.pdf"
-                    width="600"
-                    height="700"
-                ></object>
-            </div>
+           <!-- <h3>Resume</h3>
+           <button id="resume-button">Click Here To See Resume</button>
+           <div id="pdf-container">
+               <object
+                   type="application/pdf"
+                   data="pdf/Resume.pdf"
+                   width="600"
+                   height="700"
+               ></object>
+           </div> -->
 
 
-            <!-- <object
-                class="pdf"
-                data="pdf/Resume.pdf"
-                width="600"
-                height="700">
-            </object> -->
+           <!-- <object
+               class="pdf"
+               data="pdf/Resume.pdf"
+               width="600"
+               height="700">
+           </object> -->
 
-            <h3>What Am I Listening To?</h3>
-            <p>Insert Spotify API Data Here</p>
-            <p>Updated Every 30 Days</p>
-         </main>
+           <!-- <h3>What Am I Listening To?</h3> -->
+           <!-- <p>Insert Spotify API Data Here</p>
+           <p>Updated Every 30 Days</p> -->
+        </main>
 
         <!-- MAIN JS -->
         <script src="js/main.js"></script>

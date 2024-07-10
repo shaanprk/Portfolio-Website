@@ -30,7 +30,19 @@ body {
     justify-content: space-between;
 }
 
+header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .mainnav > * {
+    /* red outline to highlight elements in header */
+    border: 5px dotted red;
+}
+
+header > * {
     /* red outline to highlight elements in header */
     border: 5px dotted red;
 }
@@ -103,6 +115,7 @@ h1 {
 
 #resume-button:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #pdf-container {
