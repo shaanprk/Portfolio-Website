@@ -2,21 +2,16 @@
 /* https://fonts.google.com/ */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* VARIABLES CSS */
-
-
 body {
     box-sizing: border-box;
     margin: 0px;
-    padding: 0px;
+    padding: 20px;
     width: 100%;
     height: 100vh;
     background-color: darkgray;
     border: 20px solid gray;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    /* outline: 2px solid lime; */
 }
 
 .pagewrap > * {
@@ -40,52 +35,8 @@ body {
     max-width: 100px;
 }
 
-/* button approach */
-.menu-button {
-    cursor: pointer;
-    border: none;
-    background: none;
-}
-
-/* .menu-link-mask {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-} */
-
-/* .menu-button-close, .menu-button-open {
-    position: absolute;
-    transition: opacity 0.3s;
-} */
-
-/* .menu-button-close {
-    opacity: 0;
-} */
-
-/* .menu-button.menu-open .menu-button-close {
-    opacity: 1;
-}
-
-.menu-button.menu-open .menu-button-open {
-    opacity: 0;
-}
-
-.menu-button:not(.menu-open) .menu-button-open {
-    opacity: 1;
-}
-
-.menu-button:not(.menu-open) .menu-button-close {
-    opacity: 0;
-} */
-
-
-
-
-
-
-h1 { 
-    text-align: center;
+.navbar {
+    list-style: none;
 }
 
 li, a {
@@ -102,9 +53,6 @@ li, a {
     text-align: left;
 }
 
-.navbar {
-    list-style: none;
-}
 
 .navbar li {
     display: inline-block;
@@ -117,4 +65,8 @@ li, a {
 
 .navbar li a:hover {
     color: lightgray;
+}
+
+h1 { 
+    text-align: center;
 }
