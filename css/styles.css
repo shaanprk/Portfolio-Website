@@ -67,3 +67,20 @@ li, a {
 h1 { 
     text-align: center;
 }
+
+.to-other-page {
+    background-color: navy;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.to-other-page:hover {
+    background-color: rgb(26, 62, 141);
+    cursor:pointer;
+}
