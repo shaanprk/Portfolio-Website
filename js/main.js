@@ -7,3 +7,5 @@ document.getElementById('resume-button').addEventListener('click', function() {
         pdfContainer.style.display = 'none';
     }
 });
+
+// spotify API data
