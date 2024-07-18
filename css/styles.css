@@ -1,26 +1,40 @@
 * {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* FONTS */
 /* https://fonts.google.com/ */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 body {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    background-color: darkgray;
-    border: 20px solid gray;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background-color: lightgray;
+    overflow: auto;
 }
 
-.pagewrap > * {
-    /* green outline to highlight elements on page */
-    outline: 2px solid lime;
+.pagewrap {
+    height: 100vh;
+    border: 15px solid gray;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.content {
+    margin-top: calc(-100vh + 15px);
+    margin-right: 15px;
+    margin-left: 15px;
+    /* height: calc(100vh - 30px); */
+    z-index: 1;
+    position: relative;
+}
+
+p {
+    padding-bottom: 100px;
 }
 
 header {
@@ -30,11 +44,7 @@ header {
     justify-content: space-between;
 }
 
-header > * {
-    border: 5px dotted red;
-}
-
-.logo {
+#logo {
     border-radius:50%;
     max-width: 100px;
     cursor: pointer;
