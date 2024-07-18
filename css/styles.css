@@ -30,9 +30,9 @@ header {
     justify-content: space-between;
 }
 
-/* header > * {
+header > * {
     border: 5px dotted red;
-} */
+}
 
 .logo {
     border-radius:50%;
