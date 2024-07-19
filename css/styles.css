@@ -16,6 +16,7 @@
 
 :root {
     --border-w: 15px;
+    --margin-w: 20px;
 }
 
 body {
@@ -38,6 +39,7 @@ body:before {
 .content {
     padding: var(--border-w);
     height: 100px;
+    margin: var(--margin-w);
 }
 
 ul {
@@ -48,7 +50,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+#break {
+    border-bottom: 1px solid black;
+    width: 80%;
+    margin: var(--margin-w) auto;
 }
 
 #logo {
@@ -100,6 +110,13 @@ h1 {
 }
 
 /* Home Page */
+.intro {
+    border: 1px solid green;
+}
+
+.tester {
+    padding-bottom: 100vh;
+}
 
 /* Projects Page */
 
