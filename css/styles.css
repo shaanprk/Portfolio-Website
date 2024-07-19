@@ -1,6 +1,8 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
     box-sizing: border-box;
 }
 
@@ -8,33 +10,42 @@
 /* https://fonts.google.com/ */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+::before, ::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --border-w: 15px;
+}
 
 body {
     height: 100%;
     margin: 0;
     background-color: lightgray;
-    overflow: auto;
+    overflow-y: auto;
 }
 
-.pagewrap {
+body:before {
+    content: "";
     height: 100vh;
-    border: 15px solid gray;
-    position: sticky;
+    width: 100%;
+    border: var(--border-w) solid gray;
+    position: fixed;
     top: 0;
-    z-index: 2;
+    pointer-events: none;
 }
 
 .content {
-    margin-top: calc(-100vh + 15px);
-    margin-right: 15px;
-    margin-left: 15px;
-    /* height: calc(100vh - 30px); */
-    z-index: 1;
-    position: relative;
+    padding: var(--border-w);
+    height: 100px;
+}
+
+ul {
+    list-style: none;
 }
 
 p {
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 
 header {
