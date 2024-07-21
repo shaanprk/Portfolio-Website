@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    min-width: 0;
-    min-height: 0;
+    /* min-width: 0;
+    min-height: 0; */
     box-sizing: border-box;
 }
 
@@ -38,7 +38,6 @@ body:before {
 
 .content {
     padding: var(--border-w);
-    height: 100px;
     margin: var(--margin-w);
 }
 
@@ -50,9 +49,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid red; */
-    /* position: sticky; */
-    /* top: 0; */
+    border: 1px solid red;
+    position: sticky;
+    top: calc(var(--border-w) + var(--margin-w));
+    /* background-color: blue; */
+    z-index: 1000;
 }
 
 #break {
