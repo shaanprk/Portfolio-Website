@@ -5,11 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel="stylesheet" href="css/styles.css">
-        <title>Jeongbin Sean Park - Aspiring SWE</title>
+        <title>Jeongbin Sean Park - I Code A Little</title>
         <meta name="description" content="Jeongbin Sean Park Portfolio Website">
         <link rel="icon" type="img/icon" href="/img/Cropped_Image.png">
+        <style>
+            [v-cloak] {
+                display: none
+            }
+        </style>
     </head>
-    <body>
+    <body v-cloak>
         <div class="content">
             <header>
                 <a href="/">
@@ -29,6 +34,7 @@
                 <h1>Home Page</h1>
                 <div class="intro">
                     <h4>Hi! My name is <em>Jeongbin Sean Park.</em></h4>
+                    <p>{{ greeting }}</p>
                     <p>I am an aspiring SWE based out of California.</p>
                 </div>
                 <h3>Check out what I've been working On!</h3>
@@ -41,6 +47,17 @@
                 <p class="tester">Test</p>
             </main>
         </div>
+
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script>
+            let app = Vue.createApp({
+                data() {
+                    return {
+                        test: 0
+                    }
+                }
+            })
+            app.mount('body')
+        </script>
     </body>
 </html>
